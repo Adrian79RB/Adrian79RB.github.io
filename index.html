@@ -1,7 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Adrián Ramos"/>
+    <meta name="description" content="Adrián Ramos Boira - Game Programmer, Tools Programmer & Automation Engineer"/>
+    <title>Adrián Ramos - Game Programmer, Tools Programmer & Automation Engineer</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a0f18c2a05.js" crossorigin="anonymous"></script>
 </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Social</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Adrián Ramos Boira - Game Programmer, Tools Programmer & Automation Engineer</p>
+                <h1>Hi, I'm <span>Adrián Ramos</span> <br> Junior Games' Programmer</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------- ABOUT --------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/img/profileImageCropped.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                        <p>I am a Junior Developer that I have just finished a Game Development master
+                            in Universidad Complutense de Madrid. I am searching a studio to take my
+                            first steps in the games industry. I have some experience developping projects
+                            with game engines as Unreal or Unity, using C++ and C# in each. Moreover I have
+                            experience working in apps and games in other environments as Android Studio,
+                            OpenGL, windows Forms and even HTML5/JS/CSS. On the other hand I have worked with
+                            little and medium teams in my projects, we usually used agile methodologies as Scrum
+                            and organization softwares as Hack&Plan to assign tasks to the team. In addition,
+                            I must have used source control to develop code such as Github and Perforce.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Game Programmer</span><br>Programming Gameplay/UI in game</li>
+                                <li><span>Tools Programmer</span><br>Programming C++/C#/Java to make easier some processes</li>
+                                <li><span>Automation Programmer</span><br>Bots designed to work as AI or test some game aspects</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022-2022</span><br>Internship at Lollipop Robot </li>
+                                <li><span>2018-2022</span><br>Educational activity at New Image Technologies Institute (INIT)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2023</span><br>Video Games Development Master at Universidad Complutense de Madrid</li>
+                                <li><span>2020-2020</span><br>Cambridge English Level 1 by Cambridge University</li>
+                                <li><span>2018-2022</span><br>Video Games Design and Development degree at Universitat Jaume I</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------- SERVICES --------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Game Programming</h2>
+                    <p>I have developped some projects where my main function was coding 
+                        the gameplay aspects such as movement, puzzles, combat, etc. 
+                        Moreover, I have worked designing and programming the UI aspect 
+                        in some projects that I joined.
+                    </p>
+                    <a href="gameProgr.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Tools Programming</h2>
+                    <p>I have developped some tools to make easier the development in the project.
+                        as well as tracking systems that let the developpers gather info about the
+                        gameplay development.
+                    </p>
+                    <a href="toolsProgr.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Automation Programming</h2>
+                    <p>I have developped some tools to make easier the QA process of the project and
+                        some systems of continue integration what let the tema avoid doing repetitive actions.
+                    </p>
+                    <a href="automProgr.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------ PORTFOLIO ---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/img/Cap_WFC.jpg">
+                    <div class="layer">
+                        <h3>Wave Function Collapse</h3>
+                        <p>This is a game where I developped a system to procedurally generate the ground of the map
+                            and the decisión tree of each NPC using the same algorithm. This system let us create a
+                             different experience in each run. Watch the code in Github.
+                        </p>
+                        <span>
+                            <a href="https://github.com/Adrian79RB/WFC"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://youtu.be/xKMEAeAhcis"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/Cap_Puddies.jpg">
+                    <div class="layer">
+                        <h3>Puddies</h3>
+                        <p>This is a game where I developped different systems such as the tutorial system, the player tracking
+                            system, the music & sound managers, etc. The game is a relaxed one focus on the exploration, 
+                            the puzzle solving and the herd management. Download the demo from Steam.
+                        </p>
+                        <span>
+                            <a href="https://store.steampowered.com/app/2378370/Puddies/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://youtu.be/8gkjegSsEJ0"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/Cap_Antidote.jpg">
+                    <div class="layer">
+                        <h3>The Antidote</h3>
+                        <p>This is a point&click puzzles games where I developped a system that let us organize the narrative events
+                            and the unlocking content system based on the player progress making easy to the design team the process
+                            to stablish when the actions are thrown to the player. On the other hand I developped different puzzle
+                            games based on traditional games. Wach the code in Github.
+                        </p>
+                        <span>
+                            <a href="https://github.com/Adrian79RB/TheAntidote"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://youtu.be/mDGn0VXnfWM"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="myWork.html" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------------------- CONTACT ------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> adrianramosboira@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +34 689 47 35 49</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/adrian-ramos-87313869/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Adrian79RB?tab=repositories"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com/adrianramos111"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="assets/doc/CV_ADRIAN_RAMOS.pdf" download class="btn btn2">Dowload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2023 Adrián Ramos</p>
+        </div>
+    </div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName){
+            for(link of tabLinks){
+                link.classList.remove("active-link");
+            }
+            
+            for(content of tabContents){
+                content.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabName).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sideMenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx4iZeEhDJg887uJgnNgm6OUkyeVJjz5hTq-V7W1VM3Ik_XRYTNqkDpz4mbs-mpwiiFmQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script>
+
+
+</body>
+</html>
